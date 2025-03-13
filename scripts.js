@@ -1,0 +1,3 @@
+const Simples = () => {
+    alert('testando');
+}

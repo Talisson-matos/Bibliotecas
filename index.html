@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Botão Simples -->
+
+    <h2>Botões</h2>
+
+    <button type="" id="" class="simples" name="" value="" title="" onclick="Simples()">
+        Simples
+    </button>
+
+    <p>       
+        &lt;button type="" id="" class="simples" name="" value="" title="" onclick="Exemplo()"&gt;Simples&lt;/button&gt; 
+        <br>
+        
+        &lt;style &gt;
+        .simples {
+            width: 5rem;
+            height: 2rem;
+            cursor: pointer;
+            background: #333;
+            color: #eee;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            transition: .2s linear;
+        }
+
+        .simples:hover {
+            background: #eee;
+            color: #333;
+            border: 2px solid #333;
+        }
+        &lt;/style&gt; 
+
+        <br>
+
+        &lt;script &gt;
+        const Simples = () => {
+            alert('testando');
+        }
+        &lt;/script&gt;        
+        
+</p>
+
+<hr>
+
+<!-- botão filtro -->
+
+
+<button type="" id="" class="filtro" name="" value="" title="" onclick="Simples()">
+    Filtro
+</button>
+
+<p>       
+    &lt;button type="" id="" class="filtro" name="" value="" title="" onclick="Exemplo()"&gt;Filtro&lt;/button&gt; 
+    <br>
+    
+    &lt;style &gt;
+    .filtro {
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+    background: #333;
+    color: #eee;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: .2s linear;
+    }
+
+    .filtro:hover {
+        filter: opacity(.8);
+    }
+    &lt;/style&gt; 
+
+    <br>
+
+    &lt;script &gt;
+    const Simples = () => {
+        alert('testando');
+    }
+    &lt;/script&gt;        
+    
+</p>
+
+<hr>
+
+
+<!-- Botão simples outline -->
+
+<button type="" id="" class="btn-outline" name="" value="" title="" onclick="Simples()">
+    outline
+</button>
+
+<p>       
+    &lt;button type="" id="" class="btn-outline" name="" value="" title="" onclick="Exemplo()"&gt;Simples&lt;/button&gt; 
+    <br>
+    
+    &lt;style &gt;
+    .btn-outline {
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+    background: #eee;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 6px;
+    transition: .2s linear;
+    }
+
+    .btn-outline:hover {
+        background: #333;
+        color: #eee;
+        border: 2px solid #333;
+    }
+    &lt;/style&gt; 
+
+    <br>
+
+    &lt;script &gt;
+    const Simples = () => {
+        alert('testando');
+    }
+    &lt;/script&gt;        
+    
+</p>
+
+<hr>
+
+<!-- btn scale -->
+
+<button type="" id="" class="scale" name="" value="" title="" onclick="Simples()">
+    scale
+</button>
+
+<p>       
+    &lt;button type="" id="" class="scale" name="" value="" title="" onclick="Exemplo()"&gt;Simples&lt;/button&gt; 
+    <br>
+    
+    &lt;style &gt;
+    .scale{
+        width: 5rem;
+        height: 2rem;
+        cursor: pointer;
+        background: #eee;
+        color: #333;
+        border: 2px solid #333;
+        border-radius: 6px;
+        transition: .2s linear;
+    }
+    
+    .scale:hover{
+        transform: scale(.97);
+    }
+    
+    &lt;/style&gt; 
+
+    <br>
+
+    &lt;script &gt;
+    const Simples = () => {
+        alert('testando');
+    }
+    &lt;/script&gt;        
+    
+</p>
+
+<hr>
+
+<!-- btn brilhante -->
+
+<button type="" id="" class="brilhante" name="" value="" title="" onclick="Simples()">
+    brilhante
+</button>
+
+<p>       
+    &lt;button type="" id="" class="brilhante" name="" value="" title="" onclick="Exemplo()"&gt;Brilhante&lt;/button&gt; 
+    <br>
+    
+    &lt;style &gt;
+    .brilhante {
+        width: 5rem;
+        height: 2rem;
+        border: none;
+        outline: none;
+        color: #eee;
+        background: #333;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+    
+    .brilhante:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+    
+    .brilhante:active {
+        color: #000
+    }
+    
+    .brilhante:active:after {
+        background: transparent;
+    }
+    
+    .brilhante:hover:before {
+        opacity: 1;
+    }
+    
+    .brilhante:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+    
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+    }
+    
+    &lt;/style&gt; 
+
+    <br>
+
+    &lt;script &gt;
+    const Simples = () => {
+        alert('testando');
+    }
+    &lt;/script&gt;        
+    
+</p>
+
+<hr>
+
+<!-- botão de click -->
+
+<button type="" id="" class="click" name="" value="" title="" onclick="click()">
+    click
+</button>
+
+<p>       
+    &lt;button type="" id="" class="click" name="" value="" title="" onclick="Exemplo()"&gt;Click&lt;/button&gt; 
+    <br>
+    
+    &lt;style &gt;
+    .click {
+        width: 5rem;
+        height: 2rem;        
+        cursor: pointer;   
+        color: #fff;
+        background-color: #333;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 0 6px #666;
+      }
+      
+      .click:hover {background-color: #444}
+      
+      .click:active {
+        background-color: #333;
+        box-shadow: 0 2px #666;
+        transform: translateY(4px);
+      }
+    &lt;/style&gt; 
+
+    <br>
+
+    &lt;script &gt;
+    const Simples = () => {
+        alert('testando');
+    }
+    &lt;/script&gt;        
+    
+</p>
+
+<hr>
+
+<!-- botão de hover -->
+
+
+
+
+</body>
+
+</html>
